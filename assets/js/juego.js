@@ -192,6 +192,8 @@ function iniciar(){
 }
 
 function generarMapa(map, direccion) {
+            let jueguito= $('#juego');
+
   xtrans=[];
   ytrans=[];
   yfinal=map.length-1;
@@ -221,12 +223,12 @@ function generarMapa(map, direccion) {
           xtrans.push(j);
           ytrans.push(i);
         }
-        fila.appendChild(celda);
+        fila.append(celda);
     }
-    tabla.appendChild(fila);
+    tabla.append(fila);
   }
-  jueguito.appendChild(texto);
-  jueguito.appendChild(tabla);
+  jueguito.append(texto);
+  jueguito.append(tabla);
 }
 
 function nivel() {
@@ -260,7 +262,7 @@ function ganar() {
 let t;
 let d;
 function move(a, b, direccion)
-{ 
+{
   isrunning=true;
   if( map[y+a][x+b]=="*" ){
       clearTimeout(t);
