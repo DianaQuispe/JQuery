@@ -2,19 +2,19 @@
 
 
 $('.h2-play').click( function() {
-        let jueguito= $('#juego');
+  let jueguito= $('#juego');
 
     let $juego = $('.juego').empty();
     let principal =  $('.principal').empty();
-    principal.className = "nuevito"
+    principal.className = "nuevito";
     agregar();
 });
 function agregar() {
 
     let principal = $('.principal').html(" ");
-    $('.principal').height(600);
-    let jueguito= $('#juego');
-    jueguito.css("display", "none");
+    $('.principal').attr('class','nuevito').height(600);
+    let jueguito= $('#juego').css("display", "none");
+
     let divGrande = document.createElement("div");
     divGrande.setAttribute("id","divGrande");
     let divdeTexto = document.createElement("div");
@@ -24,7 +24,7 @@ function agregar() {
     let B1 = document.createElement("button");
     B1.innerHTML = "★ Start Game";
     B1.setAttribute("onclick", "startGame()");
-    B1.setAttribute("class","button");
+    B1.className ="button";
     let B2 = document.createElement("button");
     B2.innerHTML = "★ Instructions";
     B2.setAttribute("onclick", "instructions()");

@@ -198,7 +198,7 @@ function generarMapa(map, direccion) {
   ytrans=[];
   yfinal=map.length-1;
   xfinal=map[0].length-1;
-  jueguito.innerHTML='';
+  jueguito.html(' ');
   let texto=document.createElement('div');
   texto.innerHTML='Nivel '+level;
   texto.setAttribute('class','ganador');
@@ -233,7 +233,7 @@ function generarMapa(map, direccion) {
 
 function nivel() {
   isrunning=false;
-  jueguito.className='';
+  $('#juego').className='';
   if(s<0){
     ganar();
     s=mapas.length-1;
@@ -246,7 +246,7 @@ function nivel() {
   }
 }
 function ganar() {
-    jueguito.innerHTML='';
+    $('#juego').html();
     level=1;
     let div=document.createElement('div');
     div.setAttribute('class', 'ganador');
@@ -271,7 +271,7 @@ function move(a, b, direccion)
   }
   if( map[y+a][x+b]=="W" ){
       clearTimeout(t);
-      jueguito.className='rotar';
+      $('#juego').className='rotar';
       s--;
       d = setTimeout(nivel, 1500);
       return;
