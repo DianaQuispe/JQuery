@@ -1,0 +1,124 @@
+body {
+    background: #d5d5d5;
+    font-family: arial;
+    color: #FAFAFA;
+    text-transform: uppercase;
+}
+
+table {
+    border-spacing: 0;
+    padding: 20px;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: #ea3b28;
+    color: #f2f2f2;
+    width: 100px;
+    padding: 20px;
+    font-size: 50%x;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    margin: 1%;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #ea3b28;
+    box-shadow: inset 0 0 0 3px #ed7416;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.container {
+    background: #333;
+    width: 700px;
+    margin: 70px auto;
+    box-shadow: 0 4px 0px #333;
+    border-radius: 15px;
+    align-items: center;
+
+}
+
+.header {
+    padding: 5px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    border-radius: 15px 15px 0 0;
+    border-bottom: solid 2px #444;
+}
+
+.header h1 {
+    flex-grow: 1;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.puzzle {
+    display: inline-block;
+}
+
+.table {
+    float:left;
+    vertical-align: center;
+    horiz-align: center;
+}
+.buttons {
+    padding-top: 20px;
+    float:right;
+    vertical-align: center;
+    horiz-align: center;
+}
+
+.block {
+    background-color: #c6453f;
+}
+
+.space {
+    background-color: #e8e8e8;
+}
+
+.init {
+    background-color: #e8e8e8;
+    background-image: url(images/start.png);
+    background-size: contain;
+}
+
+.up {
+    background-color: #e8e8e8;
+    background-image: url(images/up.png);
+    background-size: contain;
+}
+.down {
+    background-color: #e8e8e8;
+    background-image: url(images/down.png);
+    background-size: contain;
+}
+.left {
+    background-color: #e8e8e8;
+    background-image: url(images/left.png);
+    background-size: contain;
+}
+.right {
+    background-color: #e8e8e8;
+    background-image: url(images/right.png);
+    background-size: contain;
+}
+
+.final {
+    background-color: #e8e8e8;
+    background-image: url(images/final.png);
+    background-size: contain;
+}

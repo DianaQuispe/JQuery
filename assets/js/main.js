@@ -1,22 +1,16 @@
 'use strict';
-let principal = $('.principal')[0];
-let juego = $('.juego')[0];
-let h2play = $('.h2-play')[0];
 let jueguito= $('#juego');
 
 
-h2play.onclick = function() {
-    while (juego.firstChild) {
-      juego.removeChild(juego.firstChild);
-    }
-    while (principal.firstChild) {
-      principal.removeChild(principal.firstChild);
-    }
+$('.h2-play').click( function() {
+    alert('f');
+    let $juego = $('.juego').empty();
+    let principal = $('.principal').empty();
     principal.className = "nuevito"
     agregar();
-}
-function agregar() { 
-    principal.innerHTML='';
+});
+function agregar() {
+    $principal.innerHTML='';
     principal.style.height='600px';
     jueguito.style.display='none';
     let divGrande = document.createElement("div");

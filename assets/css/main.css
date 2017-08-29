@@ -7,9 +7,9 @@ Colors:
 #EDE9E2
 */
 
-/* ---------- Google Font ---------- */+
+/* ---------- Google Font ---------- */
 
-
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 
 nav .nav-wrapper {
     position: relative;
@@ -22,7 +22,7 @@ nav .nav-wrapper {
     color:red;
     display: block;
 }
-@import url(http://fonts.googleapis.com/css?family=Oswald);
+
 
 body{
     font-family: 'Raleway', sans-serif;
@@ -191,7 +191,7 @@ a.block{
 
 /*-- Codigo Star Wars--*/
 body header {    overflow: hidden;
- 
+
 }
 
 
@@ -228,16 +228,16 @@ body header {    overflow: hidden;
 }
 
 @keyframes crawl {
-	0% {
+    0% {
     top: -100px;
     transform: rotateX(20deg)  translateZ(0);
   }
-	100% { 
+    100% {
     top: -6000px;
     transform: rotateX(25deg) translateZ(-2500px);
   }
 }
-    
+
 
 
 #B4 {
@@ -249,7 +249,7 @@ body header {    overflow: hidden;
 }
 
 .button:hover {
- box-shadow: 0 0 0 0 0;    
+ box-shadow: 0 0 0 0 0;
  color: #3a7999;
 }
 
@@ -321,13 +321,13 @@ body header {    overflow: hidden;
 /*/////////////////////////////////////*/
 
 #right{
-	transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 #left{
-	transform: rotate(270deg);
+    transform: rotate(270deg);
 }
 #down{
-	transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .llegada {
     background: url(../img/Copia%20%20de%20planeta.png) no-repeat center center;
@@ -335,11 +335,11 @@ body header {    overflow: hidden;
 }
 .transporte {
     background: url(../img/espiral.png) no-repeat center center;
-	background-size: contain;
+    background-size: contain;
     animation: spin 1s infinite;
 }
 .pared {
-	background-image: url(../img/textura.jpg);
+    background-image: url(../img/textura.jpg);
     background-size: cover;
 }
 
@@ -349,9 +349,9 @@ body header {    overflow: hidden;
     100% {transform: rotate(360deg);}
 }
 td{
-	box-sizing: content-box;
-	padding: 0;
-	margin: 0;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
     width: 25px;
     height: 25px;
 }
@@ -375,18 +375,18 @@ td{
 }
 
 .rotar td {
-	animation: rotate 2s;
+    animation: rotate 2s;
 }
 
 .rotar .llegada,.rotar .nave{
-	animation: spin 3s;
+    animation: spin 3s;
 }
 
 .ganador{
-	text-align: center;
-	color: white;
-	font-size: 2em;
-	font-weight: bolder;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
     font-family: 'Orbitron', sans-serif;
 }
 
